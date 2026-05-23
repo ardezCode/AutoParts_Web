@@ -1,63 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cruz AutoParts</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cruz AutoParts</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="titulo">
-            <h1 class="titulo-prin">CRUZ</h1>
-            <h1 class="h1_2">AUTOPARTS</h1>
-        </div>
-    </header>
 
-    <main>
-        <div class="card-about">
-            <h2>Sobre nosotros</h2>
-            <div class="about">  
-                <p class="content">Empresa familiar dedicada a la venta de repuestos automotrices (frenos, filtros, baterias, aceites y mas). Con una preparación rapida de pedidos</p>
-                <img src="./img/about_foto.png" alt="Sobre nosotros" class="foto_auto">
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-main">CRUZ</span>
+        <span class="logo-second">AUTOPARTS</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="tag">Repuestos automotrices de calidad</span>
+
+        <h1>
+          Potencia tu vehículo con
+          <span>las mejores piezas</span>
+        </h1>
+
+        <p>
+          Especialistas en frenos, filtros, baterías, aceites y más.
+          Preparación rápida de pedidos y atención confiable para mantener
+          tu vehículo siempre en movimiento.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#productos" class="btn-primary">Ver productos</a>
+          <a href="#ubicacion" class="btn-secondary">Visítanos</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="./img/about_foto.png" alt="Cruz AutoParts">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="about-section" id="about">
+      <div class="section-title">
+        <h2>Sobre Nosotros</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="about-container">
+        <div class="about-card">
+          <p>
+            Somos una empresa familiar dedicada a la venta de repuestos
+            automotrices con enfoque en calidad, rapidez y confianza.
+            Trabajamos con productos esenciales para el mantenimiento de
+            vehículos como baterías, frenos, filtros y lubricantes.
+          </p>
+
+          <div class="features">
+            <div class="feature-box">
+              <h3>⚡ Atención rápida</h3>
+              <p>Preparación eficiente de pedidos.</p>
             </div>
+
+            <div class="feature-box">
+              <h3>🛠 Calidad garantizada</h3>
+              <p>Productos confiables y duraderos.</p>
+            </div>
+
+            <div class="feature-box">
+              <h3>🚗 Amplio catálogo</h3>
+              <p>Repuestos para diferentes necesidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="products-section" id="productos">
+      <div class="section-title">
+        <h2>Productos Destacados</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="productos-grid">
+
+        <div class="card-product">
+          <div class="product-image">
+            <img src="./img/producto1.jpeg" alt="Producto 1">
+          </div>
+          <div class="product-info">
+            <h3>Frenos Premium</h3>
+            <span>$83</span>
+          </div>
         </div>
 
-        <div class="productos">
-            <div class="card-product">
-                <img src="./img/producto1.jpeg" alt="Producto 1">
-                <h3>$83</h3>
-            </div>
-            <div class="card-product">
-                <img src="./img/producto3.jpeg" alt="Producto 2">
-                <h3>$150</h3>
-            </div>
-            <div class="card-product">
-                <img src="./img/producto2.jpeg" alt="Producto 3">
-                <h3>$1,000</h3>
-            </div>
-            <div class="card-product">
-                <img src="./img/producto5.jpeg" alt="Producto 5">
-                <h3>$55</h3>
-            </div>
+        <div class="card-product">
+          <div class="product-image">
+            <img src="./img/producto3.jpeg" alt="Producto 2">
+          </div>
+          <div class="product-info">
+            <h3>Batería Automotriz</h3>
+            <span>$150</span>
+          </div>
         </div>
 
-        <div>
-            <h2>Encuentranos!</h2>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734.4012208356853!2d-89.07638827089954!3d13.718183789737406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6349709fc494fb%3A0x225d8fcf213e2235!2sCruz%20Autoparts%201!5e0!3m2!1ses!2ssv!4v1778553798958!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="card-product">
+          <div class="product-image">
+            <img src="./img/producto2.jpeg" alt="Producto 3">
+          </div>
+          <div class="product-info">
+            <h3>Motor Completo</h3>
+            <span>$1,000</span>
+          </div>
         </div>
-    </main>
 
-    <footer>
-        <div>
-            <p>&copy; Anthony Arias 2026. All rights reserved.</p>
+        <div class="card-product">
+          <div class="product-image">
+            <img src="./img/producto5.jpeg" alt="Producto 4">
+          </div>
+          <div class="product-info">
+            <h3>Filtro y Aceite</h3>
+            <span>$55</span>
+          </div>
         </div>
-    </footer>
 
-    
+      </div>
+    </section>
+
+
+    <section class="location-section" id="ubicacion">
+      <div class="section-title">
+        <h2>Encuéntranos</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734.4012208356853!2d-89.07638827089954!3d13.718183789737406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6349709fc494fb%3A0x225d8fcf213e2235!2sCruz%20Autoparts%201!5e0!3m2!1ses!2ssv!4v1778553798958!5m2!1ses!2ssv"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="footer-content">
+      <h3>CRUZ AUTOPARTS</h3>
+      <p>Calidad, rapidez y confianza para tu vehículo.</p>
+      <span>© Julio Arias 2026. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
 </body>
 </html>
